@@ -41,7 +41,7 @@ open class BaseViewModel : ViewModel() {
     }
 
     /**
-     * BaseKotlinActivity 에서 쓰는 함수
+     * BaseActivity에서 쓰는 함수
      */
     fun observeSnackbarMessage(lifeCycleOwner: LifecycleOwner, ob:(Int) -> Unit){
         snackbarMessage.observe(lifeCycleOwner, ob)
