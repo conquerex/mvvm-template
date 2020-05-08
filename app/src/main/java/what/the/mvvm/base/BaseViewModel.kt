@@ -31,7 +31,7 @@ open class BaseViewModel : ViewModel() {
     }
 
     /**
-     * 스낵바를 보여주고 싶으면 viewModel 에서 이 함수를 호출
+     * 스낵바를 보여주고 싶으면 viewModel에서 이 함수를 호출
      */
     fun showSnackbar(stringResourceId:Int) {
         snackbarMessage.value = stringResourceId
