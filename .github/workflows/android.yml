@@ -1,0 +1,13 @@
+name: Android CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+  	- uses: malinskiy/action-android/install-sdk@release/0.0.5
+    - name: Build with Gradle
+      run: sudo ./gradlew clean assembleDebug
