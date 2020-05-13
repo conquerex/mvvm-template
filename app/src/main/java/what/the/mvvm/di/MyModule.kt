@@ -5,6 +5,7 @@ import org.koin.dsl.module.module
 import retrofit2.Retrofit
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import retrofit2.converter.gson.GsonConverterFactory
+import what.the.mvvm.MainSearchRecyclerViewAdapter
 import what.the.mvvm.model.DataModel
 import what.the.mvvm.model.DataModelImpl
 import what.the.mvvm.model.service.KakaoSearchService
@@ -27,7 +28,7 @@ var retrofitPart = module {
 
 var adapterPart = module {
     factory {
-        // todo : MainSearchRecyclerViewAdapter
+        MainSearchRecyclerViewAdapter()
     }
 }
 
