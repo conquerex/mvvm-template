@@ -6,10 +6,9 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
+    env:
+      TEST2: ${{ secrets.TEST_2 }}
+
     steps:
-    - uses: actions/checkout@v1
-      
-  	    - uses: malinskiy/action-android/install-sdk@release/0.0.5
-          
-    - name: Build with Gradle
-      run: sudo ./gradlew clean assembleDebug
+    - uses: actions/checkout@v2
+    - run: echo $TEST2
