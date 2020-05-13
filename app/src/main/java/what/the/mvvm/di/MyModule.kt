@@ -10,6 +10,10 @@ import what.the.mvvm.model.DataModelImpl
 import what.the.mvvm.model.service.KakaoSearchService
 import what.the.mvvm.viewmodel.MainViewModel
 
+/**
+ * MyModule.kt
+ */
+
 var retrofitPart = module {
     single<KakaoSearchService> {
         Retrofit.Builder()
